@@ -1,0 +1,79 @@
+.color {
+  color: red;
+
+  animation-name: example;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+
+/* Standard syntax */
+@keyframes example {
+  0% {
+    color: red;
+  }
+  17% {
+    color: orange;
+  }
+  34% {
+    color: yellow;
+  }
+  50% {
+    color: green;
+  }
+  67% {
+    color: blue;
+  }
+  84% {
+    color: indigo;
+  }
+  100% {
+    color: violet;
+  }
+}
+.material-icons.md-36 {
+  font-size: 50px;
+}
+.postcontent {
+  font-family: "Montserrat";
+  font-size: 1.5em;
+}
+
+.bigbrand {
+  font-size: 1.5em;
+}
+.posttitle {
+  font-family: "Russo One", sans-serif;
+  font-size: 3em;
+  text-align: center;
+}
+.techfont {
+  font-family: "Russo One", sans-serif;
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+.postdate {
+  text-align: center;
+}
+.btn-comment {
+  position: absolute;
+  right: 0px;
+}
+.centerstage {
+  margin-left: auto;
+  margin-right: auto;
+}
+/*
+.loader {
+  filter: hue-rotate(0deg);
+  background: linear-gradient(45deg, #0f8, #08f);
+  animation: hue 10000ms infinite linear;
+}
+
+@keyframes hue {
+  0% {
+    filter: hue-rotate(0deg);
+  }
+  100% {
+    filter: hue-rotate(360deg);
+  }
+}*/

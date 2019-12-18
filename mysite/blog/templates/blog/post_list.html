@@ -1,0 +1,22 @@
+{% extends 'blog/blog_base.html' %} {% block content %}
+
+<div class="mx-auto centerstage mt-3">
+  {% if post_list %} {% for post in post_list %}
+  <h1>
+    <a class="color" href="{% url 'blog:post_detail' pk=post.id %}"
+      >{{ post.title }}</a
+    >
+  </h1>
+  <div class="date">
+    <p class="mb-0">Published on: {{post.publish_date|date:'D M Y'}}</p>
+  </div>
+  <p>
+    <a style="color: black" href="{% url 'blog:post_detail' pk=post.id %}"
+      >Comments: {{post.comments.count}}</a
+    >
+  </p>
+  {% endfor %} {% else %}
+  <p>NO POSTS</p>
+  {% endif %}
+</div>
+{% endblock %}

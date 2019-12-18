@@ -1,0 +1,12 @@
+{% extends 'blog/blog_base.html' %} {% block content %}
+
+<div class="jumbotron">
+  <h1 style="text-align:center">{{ post.title }}</h1>
+  <p><a href="http://" class="btn btn-primary btn-sm">Publish</a></p>
+  <p style="border: 1px solid black">{{ post.text }}</p>
+</div>
+<div class="container">
+  <a href="http://" class="btn btn-warning">Edit</a>
+  <a href="{% url 'blog:delete' pk=post.id %}" class="btn btn-danger">Delete</a>
+</div>
+{% endblock %}
